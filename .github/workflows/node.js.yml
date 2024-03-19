@@ -22,6 +22,7 @@ jobs:
           npm run build --if-present
           cd ..
           rm -rf server/static
+          mkdir static
           mv client/dist server/static
       - name: commit back to repo
         uses: stefanzweifel/git-auto-commit-action@v5
